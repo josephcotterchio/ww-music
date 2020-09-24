@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Welcome to The National and Wine</p>
+        <h2>Welcome to The National and Wine</h2>
         <a
           className="App-link"
           href="https://americanmary.com/"
