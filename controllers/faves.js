@@ -1,4 +1,4 @@
-var Score = require("../models/fave");
+var Fave = require("../models/fave");
 
 module.exports = {
   create,
