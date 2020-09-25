@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import SignupPage from "../SignupPage/SignupPage";
+import SignUpPage from "../SignUpPage/SignUpPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
 
@@ -20,6 +20,7 @@ function App() {
       </header>
     </div>
    
+  )
 }
 
 export default App;
