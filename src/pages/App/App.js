@@ -9,7 +9,16 @@ class App extends React.Component {
   state = {
     play: false,
   };
-   FavePage = new Audio(this.props.url);
+  FavePage = new Audio(this.props.url);
+  
+  handleLogout = () => {
+    userService.logout();
+    this.setState({ user: null });
+  };
+
+  handleSignupOrLogin = () => {
+    this.setState({ user: userService.getUser() });
+  };
 
   render() {
     return (
