@@ -1,22 +1,23 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
 import FavePage from "../FavePage/FavePage";
 import SignUpPage from "../SignUpPage/SignUpPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
 
-class App extends React.Component {
+class App extends Component {
   state = {
     play: false,
   };
   FavePage = new Audio(this.props.url);
-  
+
   handleLogout = () => {
     userService.logout();
     this.setState({ user: null });
   };
 
-  handleSignupOrLogin = () => {
+  handleSignUpOrLogin = () => {
     this.setState({ user: userService.getUser() });
   };
 
