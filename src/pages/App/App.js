@@ -5,6 +5,7 @@ import SignUpPage from "../SignUpPage/SignUpPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
 import NavBar from "../../components/NavBar/NavBar";
+import FavePage from "../FavePage/FavePage";
 
 class App extends Component {
   constructor() {
@@ -63,6 +64,10 @@ class App extends Component {
               />
             )}
           />
+          <Route exact path="/favepage">
+              <FavePage />
+            </Route>
+            <Route path="/favepage"></Route>
         </Switch>
       </div>
     );
