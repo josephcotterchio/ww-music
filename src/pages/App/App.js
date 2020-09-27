@@ -7,13 +7,14 @@ import userService from "../../utils/userService";
 import NavBar from "../../components/NavBar/NavBar";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      play: false,
-    }
+      // Initialize user if there's a token, otherwise null
+      user: userService.getUser(),
+    };
   }
-    
+
   // FavePage = new Audio(this.props.url);
   handleLogout = () => {
     userService.logout();
@@ -24,11 +25,10 @@ class App extends Component {
     this.setState({ user: userService.getUser() });
   };
 
-
   render() {
     return (
       <div className="App-header-footer">
-      <NavBar />
+        <NavBar />
         <header className="header-footer">
           <h1>"I'm mixing weed with wine" -- The National</h1>
           <h2>The last music app you'll want</h2>
@@ -42,20 +42,28 @@ class App extends Component {
             Learn about The National
           </a>
         </header>
-          <Switch>
-            <Route exact path='/signup' render={({ history }) => 
-            <SignUpPage
-              history={history}
-              handleSignUpOrLogin={this.handleSignUpOrLogin}
-            />
-          }/>
-          <Route exact path='/login' render={({ history }) => 
-            <LoginPage
-              history={history}
-              handleSignUpOrLogin={this.handleSignUpOrLogin}
-            />
-          }/>
-          </Switch>
+        <Switch>
+          <Route
+            exact
+            path="/signup"
+            render={({ history }) => (
+              <SignUpPage
+                history={history}
+                handleSignUpOrLogin={this.handleSignUpOrLogin}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/login"
+            render={({ history }) => (
+              <LoginPage
+                history={history}
+                handleSignUpOrLogin={this.handleSignUpOrLogin}
+              />
+            )}
+          />
+        </Switch>
       </div>
     );
   }
