@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../../components/NavBar/NavBar";
-import { Route, Switch, Link } from "react-router-dom";
 import "./FavePage.css";
 
 const FavePage = (props) => {
