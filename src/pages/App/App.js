@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App-header-footer">
-        <NavBar />
+        <NavBar user={this.state.user} handleLogout={this.handleLogout} />
         <header className="header-footer">
           <h1>"I'm mixing weed with wine" -- The National</h1>
           <h2>The last music app you'll want</h2>
@@ -65,9 +65,9 @@ class App extends Component {
             )}
           />
           <Route exact path="/favepage">
-              <FavePage />
-            </Route>
-            <Route path="/favepage"></Route>
+            <FavePage />
+          </Route>
+          <Route path="/favepage"></Route>
         </Switch>
       </div>
     );
