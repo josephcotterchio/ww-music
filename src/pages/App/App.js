@@ -32,7 +32,7 @@ class App extends Component {
         <NavBar user={this.state.user} handleLogout={this.handleLogout} />
         <header className="header-footer">
           <h1>"I'm mixing weed with wine" -- The National</h1>
-          <h2>The last music app you'll want</h2>
+          <h2>The last app you'll want</h2>
           <br />
           <a
             className="App-link"

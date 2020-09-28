@@ -10,10 +10,7 @@ const FavePage = (props) => {
       <div className="flex-h align-flex-end">
         <FavePage colors={props.colors} />
         {props.user && (
-          <Link
-            className="btn btn-default FavePage-link-margin"
-            to="/music"
-          >
+          <Link className="btn btn-default FavePage-link-margin" to="/music">
             Music
           </Link>
         )}
