@@ -11,6 +11,8 @@ function ProductForm({ product }) {
         <dl>
           <dt>Quality</dt>
           <dd>{product.quality}</dd>
+          <dt>Hyperlink to product</dt>
+          <dd>{product.url}</dd>
           <dt>Description</dt>
           <dd>{product.description}</dd>
         </dl>

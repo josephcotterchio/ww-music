@@ -54,6 +54,15 @@ class EditProductPage extends Component {
             />
           </div>
           <div className="form-group">
+            <label>URL for product</label>
+            <input
+              className="form-control"
+              name="url"
+              value={this.state.formData.url}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="form-group">
             <label>Description</label>
             <input
               className="form-control"

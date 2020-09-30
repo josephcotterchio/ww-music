@@ -6,6 +6,7 @@ class AddProductPage extends Component {
     formData: {
       product: "",
       quality: "",
+      url: "",
       description: "",
     },
   };
@@ -53,6 +54,15 @@ class AddProductPage extends Component {
               className="form-control"
               name="quality"
               value={this.state.formData.quality}
+              onChange={this.handleChange}
+            />
+          </div>
+            <div className="form-group">
+            <label>URL for product</label>
+            <input
+              className="form-control"
+              name="url"
+              value={this.state.formData.url}
               onChange={this.handleChange}
             />
           </div>
