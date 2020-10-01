@@ -76,7 +76,7 @@ class App extends Component {
     return (
       <div className="App-header-footer">
         <NavBar user={this.state.user} handleLogout={this.handleLogout} />
-        <header className="header-footer">
+        <header className="header">
           <h1>"I'm mixing weed with wine" -- The National</h1>
           <h2>The last app</h2>
           <br />

@@ -13,8 +13,16 @@
   }
 }
 
+@keyframes example {
+  from {
+    background-image: url(https://i.imgur.com/NgYlkgx.jpg);
+  }
+  to {
+    background-image: url(https://i.imgur.com/XAJ2TrG.jpg);
+  }
+}
+
 .App-header-footer {
-  background-image: url(https://i.imgur.com/NgYlkgx.jpg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,6 +35,10 @@
   background-size: cover;
   z-index: -1;
   text-align: center;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #header-footer {
@@ -37,10 +49,21 @@
 .App-link {
   color: #61dafb;
 }
-
-/* h1 {
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+h1 {
+  font-family: "Signika";
+  text-shadow: 2px 2px black;
+  color: white;
 }
 
 h2 {
-} */
-
+  font-family: "Signika";
+  text-shadow: 2px 2px black;
+  color: white;
+}
