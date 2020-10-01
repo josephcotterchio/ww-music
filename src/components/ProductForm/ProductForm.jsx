@@ -10,7 +10,7 @@ function ProductForm({ product }) {
       </div>
       <div className="panel-body">
         <dl>
-          <dt>Quality</dt>
+          <dt>Quality (1-5)</dt>
           <dd>{product.quality}</dd>
           <dt>Hyperlink to product</dt>
           <dd>
