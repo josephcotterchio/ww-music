@@ -1,5 +1,32 @@
-.NavBar-welcome {
-  color: whitesmoke;
-  font-family: "Roboto";
+.nav {
+    height: 40px;
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: "sticky-top";
+    z-index: 4;
 }
 
+.nav-logo {
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+}
+
+.nav-bar {
+    display: flex;
+    z-index: 2;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}

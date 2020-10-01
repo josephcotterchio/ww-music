@@ -57,13 +57,13 @@
   width: 100%;
 }
 h1 {
-  font-family: "Signika";
+  font-family: 'Roboto', sans-serif;
   text-shadow: 2px 2px black;
   color: white;
 }
 
 h2 {
-  font-family: "Signika";
+  font-family: 'Roboto', sans-serif;
   text-shadow: 2px 2px black;
   color: white;
 }

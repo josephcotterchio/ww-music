@@ -2,7 +2,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Signika"
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 :root {
@@ -38,4 +40,11 @@ dl {
 
 .margin-left-10 {
   margin-left: 10px;
+}
+input {
+  color: black;
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
