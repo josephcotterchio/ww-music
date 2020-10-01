@@ -13,6 +13,7 @@ export function create(product) {
   }).then((res) => res.json());
 }
 
+
 export function update(product) {
   return fetch(`${BASE_URL}/${product._id}`, {
     method: "PUT",

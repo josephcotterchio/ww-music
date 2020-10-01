@@ -54,6 +54,7 @@ class App extends Component {
   };
 
   handleDeleteProduct = async (id) => {
+    console.log("delete")
     await productAPI.deleteOne(id);
     this.setState(
       (state) => ({

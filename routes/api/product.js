@@ -2,14 +2,13 @@ var express = require("express");
 var router = express.Router();
 var productsCtrl = require("../../controllers/products");
 
-
+router.delete("/:id", productsCtrl.deleteOne);
 router.get("/", productsCtrl.index);
 router.get("/:id", productsCtrl.show);
 router.post("/", productsCtrl.create);
 /*---------- Protected Routes ----------*/
 // Process the token for only the routes below
 router.use(require("../../config/auth"));
-router.delete("/:id", checkAuth, productsCtrl.deleteOne);
 router.put("/:id", checkAuth, productsCtrl.update);
 
 /*----- Helper Functions -----*/
