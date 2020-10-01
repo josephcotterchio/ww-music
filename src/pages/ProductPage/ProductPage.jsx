@@ -6,7 +6,7 @@ function ProductPage(props) {
   return (
     <>
       <h1>Products</h1>
-      <ProductForm key={product._id} product={product} />
+      <ProductForm class="faves" key={product._id} product={product} />
     </>
   );
 }

@@ -17,7 +17,7 @@ section > article {
   display: flex;
   justify-content: space-between;
   min-width: 15rem;
-  color: white;
+  color: black;
   margin: 0.1rem;
   background-color: #737495;
 }
@@ -50,7 +50,7 @@ select {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.4rem;
-  color: white;
+  color: black;
   border: 2px solid #737495;
   border-radius: 0;
   outline: none;
@@ -74,7 +74,7 @@ button:hover {
   background-color: #737495;
 }
 
-.product {
+.faves {
   background-color: white;
   color: black;
   display: flex;
