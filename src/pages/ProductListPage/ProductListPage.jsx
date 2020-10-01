@@ -5,7 +5,7 @@ import ProductList from "../../components/ProductList/ProductList";
 function ProductListPage(props) {
   return (
     <>
-      <h1>Product List</h1>
+      <h1>Your Saved Products</h1>
       <div className="ProductListPage-grid">
         {props.product.map((product) => (
           <ProductList

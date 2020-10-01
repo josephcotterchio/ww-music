@@ -77,15 +77,15 @@ class App extends Component {
         <NavBar user={this.state.user} handleLogout={this.handleLogout} />
         <header className="header-footer">
           <h1>"I'm mixing weed with wine" -- The National</h1>
-          <h2>The last app you'll want</h2>
+          <h2>The last app</h2>
           <br />
           <a
             className="App-link"
-            href="https://americanmary.com/"
+            href="https://www.google.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn about The National
+            Search for products on Google
           </a>
         </header>
         <Switch>

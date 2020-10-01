@@ -45,7 +45,7 @@ class EditProductPage extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Product's Quality</label>
+            <label>Product Quality</label>
             <input
               className="form-control"
               name="quality"
