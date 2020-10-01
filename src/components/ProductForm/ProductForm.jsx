@@ -13,7 +13,8 @@ function ProductForm({ product }) {
           <dt>Quality</dt>
           <dd>{product.quality}</dd>
           <dt>Hyperlink to product</dt>
-          <dd>{product.url}</dd>
+          <dd>
+            <a href={product.url} target="_blank" rel="noopener noreferrer">Your hyperlink</a></dd>
           <dt>Description</dt>
           <dd>{product.description}</dd>
         </dl>
