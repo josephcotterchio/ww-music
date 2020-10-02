@@ -1,8 +1,8 @@
 <strong>ww-theNational</strong>
 
-The app is meant for any non-hipster web dev. You can add in all of the products you want to buy or re-buy. Or just things you find later that are of interest.
+The app is meant for any non-hipster web dev. You can add in all of the products you want to buy or re-buy. Or just things that you want to find later that are of interest.
 
-After a long day, it's an easy way to save your favourite, weed, wine, and music. What every web dev needs.
+After a long day, it's an easy way to save your favourite, weed, wine, and music. What every web dev needs (or a combination thereof).
 
 
 <strong>Screenshot</strong>
