@@ -25,6 +25,7 @@ After a long day, it's an easy way to save your favourite, weed, wine, and music
 * GitHub
 * Git
 * Heroku
+* JWT authorization
 
 <strong>Roadblocks</strong>
 * Implementing the main viable product for the project was done relatively quickly. But trying to implement user stories in a MERN stack, within a week, became impossible. Due to the heirarchical nature of React, days were spent trying to code the database, controllers, models, routes, components and pages. In doing so, it risked losing that main viable product. Working on a branch of the main work, I attempted to add in additional functionality. The timelines simply didn't allow for those user stories to be added.
